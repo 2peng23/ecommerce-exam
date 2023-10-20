@@ -32,7 +32,8 @@
                         </form>
 
 
-                        <a href="{{ url('delete-cart-item', $item->id) }}" class="btn btn-warning mt-1">Remove</a>
+                        <a href="{{ url('delete-cart-item', $item->id) }}" class="btn btn-warning mt-1"
+                            onclick="return confirm('Delete from cart?')">Remove</a>
                     </div>
                 </div>
                 @php
